@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Essencia Divina | Maquillaje</title>
+  <meta name="description" content="Essencia Divina es una tienda de cosméticos femeninos. Consulta labiales, bases y rubores, arma tu pedido y confírmalo por WhatsApp.">
+  <meta name="theme-color" content="#3d2a42">
+  <meta property="og:title" content="Essencia Divina">
+  <meta property="og:description" content="Cosméticos femeninos con pedidos directos por WhatsApp.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_CO">
+  <link rel="icon" href="img/logo.jpg" type="image/jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body data-pagina="inicio">
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <header class="cabecera">
+    <div class="envoltura cabecera__interior">
+      <a class="marca" href="index.html">
+        <img class="marca__logo" src="img/logo.jpg" alt="" width="76" height="76">
+        <span class="marca__texto">
+          <strong>Essencia Divina</strong>
+          <small>Maquillaje</small>
+        </span>
+      </a>
+      <button class="menu" type="button" aria-expanded="false" aria-controls="navegacion">Menú</button>
+      <nav id="navegacion" class="nav" aria-label="Principal">
+        <a href="index.html" data-nav="inicio">Inicio</a>
+        <a href="catalogo.html" data-nav="catalogo">Catálogo</a>
+        <a href="catalogo.html?categoria=labiales" data-nav="labiales">Labiales</a>
+        <a href="catalogo.html?categoria=bases" data-nav="bases">Bases</a>
+        <a href="catalogo.html?categoria=rubores" data-nav="rubores">Rubores</a>
+        <a class="carrito-enlace" href="carrito.html" data-nav="carrito">
+          Carrito
+          <span class="contador" data-contador>0</span>
+          <span class="sr" data-contador-texto>0 productos en el carrito</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+  <main id="contenido">
+    <div class="envoltura">
+      <section class="hero">
+        <div>
+          <p class="sobrelinea">Essencia Divina</p>
+          <h1>Maquillaje que realza tu esencia.</h1>
+          <p class="hero__texto">Labiales, bases y rubores pensados para cuidar la piel y acompañar tu día. Elige tu tono, arma el pedido y confírmalo por WhatsApp.</p>
+          <div class="hero__acciones">
+            <a class="boton" href="catalogo.html">Ver catálogo</a>
+            <a class="boton boton--borde" href="catalogo.html?categoria=labiales">Labiales</a>
+          </div>
+        </div>
+        <figure class="hero__visual">
+          <img src="img/hero.jpg" alt="Base de maquillaje Essencia Divina, de origen natural, en envase de 30 ml" width="900" height="900" fetchpriority="high">
+        </figure>
+      </section>
+
+      <section class="seccion" aria-labelledby="titulo-seleccion">
+        <div class="seccion__encabezado">
+          <h2 id="titulo-seleccion">Productos destacados</h2>
+          <a href="catalogo.html">Ver todo</a>
+        </div>
+        <noscript><p class="estado">Activa JavaScript para ver los productos y usar el carrito.</p></noscript>
+        <p id="estado-inicio" class="estado">Cargando productos…</p>
+        <div id="destacados" class="rejilla"></div>
+      </section>
+    </div>
+  </main>
+  <footer class="pie">
+    <div class="envoltura pie__interior">
+      <div>
+        <p class="marca-pie">Essencia Divina</p>
+        <p>Cosméticos femeninos, con pedidos directos por WhatsApp.</p>
+      </div>
+      <nav aria-label="Pie de página">
+        <a href="catalogo.html">Catálogo</a>
+        <a href="catalogo.html?categoria=labiales">Labiales</a>
+        <a href="catalogo.html?categoria=bases">Bases</a>
+        <a href="catalogo.html?categoria=rubores">Rubores</a>
+        <a href="carrito.html">Carrito</a>
+      </nav>
+      <div>
+        <div class="redes">
+          <a class="red" href="#" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H8v3h2v7h3v-7h2.6l.4-3H13v-2c0-.6.4-1 1-1z"/></svg>
+          </a>
+          <a class="red" href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4zm10 2H7a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2zM12 8.2A3.8 3.8 0 1 1 8.2 12 3.8 3.8 0 0 1 12 8.2zm0 1.6A2.2 2.2 0 1 0 14.2 12 2.2 2.2 0 0 0 12 9.8zM17.2 6.6a1 1 0 1 1-1 1 1 1 0 0 1 1-1z"/></svg>
+          </a>
+        </div>
+        <p><a href="https://wa.me/573104134875">Escribir por WhatsApp</a></p>
+      </div>
+    </div>
+    <p class="pie__legal">© <span data-anio>2026</span> Essencia Divina</p>
+  </footer>
+  <div class="aviso" data-aviso hidden role="status"></div>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
